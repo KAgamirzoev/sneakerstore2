@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Panel"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Форма добавления товара -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Product"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/brandEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Brand" />
+
+        <EditText
+            android:id="@+id/modelEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Model" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/imageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Image URL" />
+
+        <Button
+            android:id="@+id/addProductButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Product" />
+
+        <!-- Раздел изменения цены -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Product Price"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/productIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product ID" />
+
+        <EditText
+            android:id="@+id/newPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Price"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/updatePriceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Price" />
+
+        <!-- Список товаров -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product List"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <ListView
+            android:id="@+id/productListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:scrollbars="vertical" />
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</ScrollView>
